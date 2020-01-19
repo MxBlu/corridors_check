@@ -17,3 +17,6 @@ python3 ./corridors_check.py
 # Type 'reload' to refresh data from spreadsheets
 # Enter first 2 links (i.e. PSCDTPHTBHCSBH) or a full checksum (i.e. PSCDTPHTBHCSBHDTDTTSCHCHSTDHBPSSHBCTSCHHST)
 ```
+
+## Contributing
+All changes welcome, just PR
