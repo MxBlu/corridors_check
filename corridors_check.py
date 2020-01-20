@@ -4,7 +4,7 @@ import urllib.request
 import csv
 from io import StringIO
 
-OSIRIS_MASTER = "https://docs.google.com/spreadsheets/d/e/2PACX-1vReSbN-lyLXPfYyyq3_wSZ7aRh8LHwbOtXl97jvfafnWpxqIgEiE5VxC6eEpm7Mt8WtV6ckqfn14i6N/pub?output=csv&gid=2145314735"
+OSIRIS_MASTER = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmUmcYboRFnIfyHQkrmo_TRfLlLb42ve92XvPfMj05zC4FPnvcT-SW9M-3gkExn-Fe65tAXtW0rbpv/pub?output=csv&gid=0"
 OSIRIS_NEWDATA = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQUx7ukBGrGe6NDJJW5BTZoKKcCCKhnpgJp3tQjOxVIkcrS-riJnXKlg2F-jrc3o9sE5Rs-bJtMy47z/pub?output=csv&gid=1134814326"
 
 dataset = {}
@@ -13,7 +13,7 @@ lookup = {}
 def load_master():
     global dataset
     global lookup
-    # Cols: -- Center Openings Link1 Link2 Link3 Link4 Link5 Link6 Status Checksum
+    # Cols: -- Center Openings Link1 Link2 Link3 Link4 Link5 Link6 Comments ?? isDup Checksum2
     urlstream = urllib.request.urlopen(OSIRIS_MASTER)
     csvf = csv.reader(StringIO(urlstream.read().decode('utf-8')), delimiter=',')
     iter(csvf)  # Toss out headers
@@ -27,7 +27,7 @@ def load_master():
         link4 = row[6]
         link5 = row[7]
         link6 = row[8]
-        checksum = row[10]
+        checksum = row[12]
 
         node = {
             "url": row[0],

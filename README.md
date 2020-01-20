@@ -2,7 +2,7 @@
 
 Uses the following sheets as references:
 https://docs.google.com/spreadsheets/d/e/2PACX-1vQUx7ukBGrGe6NDJJW5BTZoKKcCCKhnpgJp3tQjOxVIkcrS-riJnXKlg2F-jrc3o9sE5Rs-bJtMy47z/pubhtml?gid=1134814326&single=true
-https://docs.google.com/spreadsheets/d/e/2PACX-1vReSbN-lyLXPfYyyq3_wSZ7aRh8LHwbOtXl97jvfafnWpxqIgEiE5VxC6eEpm7Mt8WtV6ckqfn14i6N/pubhtml?gid=2145314735&single=true
+https://docs.google.com/spreadsheets/d/e/2PACX-1vTmUmcYboRFnIfyHQkrmo_TRfLlLb42ve92XvPfMj05zC4FPnvcT-SW9M-3gkExn-Fe65tAXtW0rbpv/pubhtml?gid=0&single=true
 
 ## Requirements
 
